@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ex2"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_view_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="What number do you want to call?"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:textColorHighlight="@color/black">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edt_text_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:numeric="integer"
+                    android:background="@color/teal_700">
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_phone"
+                    android:layout_width="250dp"
+                    android:layout_height="150px"
+                    android:layout_gravity="center"
+                    android:text="Call 📞"
+                    android:textColorHint="@color/white" >
+
+                </Button>
+
+                <Button
+                    android:id="@+id/next_ex_2"
+                    android:textColor="@color/black"
+                    android:layout_width="250dp"
+                    android:layout_height="150px"
+                    android:layout_gravity="center"
+                    android:lines="1"
+                    android:padding="10px"
+                    android:text="More..."
+                    android:onClick="next_ex">
+
+                </Button>
+        </LinearLayout>
+</LinearLayout>
