@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2"
+    tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Wi-Fi"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginTop="360dp"/>
+
+        <Button
+            android:id="@+id/btn_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Phone"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginTop="410dp"/>
+
+        <Button
+            android:id="@+id/btn_mess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Messages"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginTop="460dp"/>
+
+        <Button
+            android:id="@+id/btn_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Contacts"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginTop="510dp"/>
+
+        <Button
+            android:id="@+id/btn_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="Google and More..."
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginTop="560dp" />
+
+</RelativeLayout>
