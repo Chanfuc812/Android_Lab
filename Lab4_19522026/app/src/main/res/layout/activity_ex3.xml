@@ -4,30 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     tools:context=".Ex3">
 
     <LinearLayout
         android:id="@+id/imageLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/userImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/ic_person" />
+            android:layout_gravity="center"
+            android:src="@drawable/chanfuc" />
 
         <Button
             android:id="@+id/changeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:layout_gravity="center"
             android:backgroundTint="#0b5394"
-            android:text="Change"
-            android:layout_gravity="center"/>
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Change" />
 
     </LinearLayout>
 
@@ -45,8 +47,7 @@
         android:id="@+id/inputlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/nameLabel"
@@ -56,7 +57,9 @@
             android:layout_marginTop="50dp"
             android:layout_marginStart="3dp"
             android:text="Name:"
-            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             />
 
         <EditText
@@ -65,9 +68,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/nameLabel"
             android:minHeight="50dp"
-            android:hint="Enter your name..."
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
+            android:hint="Your Name"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="80dp"
             android:background="@drawable/bg"/>
 
         <TextView
@@ -78,7 +81,9 @@
             android:layout_marginTop="15dp"
             android:layout_marginStart="3dp"
             android:text="Email:"
-            android:textSize="16sp" />
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/emailField"
@@ -86,9 +91,9 @@
             android:layout_height="wrap_content"
             android:minHeight="50dp"
             android:layout_below="@+id/emailLabel"
-            android:hint="Enter your email..."
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
+            android:hint="Your E-mail"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="80dp"
             android:background="@drawable/bg"/>
 
         <TextView
@@ -99,7 +104,9 @@
             android:layout_marginTop="15dp"
             android:layout_marginStart="3dp"
             android:text="Phone:"
-            android:textSize="16sp" />
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/phoneField"
@@ -107,9 +114,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/phoneLabel"
             android:minHeight="50dp"
-            android:hint="Enter your phone number..."
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
+            android:hint="Your Phone Number"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="80dp"
             android:background="@drawable/bg"/>
 
         <TextView
@@ -120,7 +127,9 @@
             android:layout_marginTop="15dp"
             android:layout_marginStart="3dp"
             android:text="Gender:"
-            android:textSize="16sp" />
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
 
         <RadioGroup
             android:id="@+id/genderGroup"
@@ -133,7 +142,6 @@
                 android:id="@+id/maleRadio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
                 android:text="Male" />
 
             <RadioButton
@@ -141,6 +149,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/otherRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
 
         </RadioGroup>
 
@@ -155,7 +169,8 @@
         android:layout_marginRight="100dp"
         android:backgroundTint="#FF0000"
         android:layout_alignParentRight="true"
-        android:text="Cancel" />
+        android:textStyle="bold"
+        android:text="Exit"/>
 
     <Button
         android:id="@+id/saveButton"
@@ -166,16 +181,19 @@
         android:layout_marginLeft="100dp"
         android:layout_alignParentLeft="true"
         android:backgroundTint="#20B2AA"
-        android:text="Save" />
+        android:textStyle="bold"
+        android:text="Save"/>
 
     <Button
         android:layout_marginTop="20dp"
         android:layout_below="@id/saveButton"
         android:id="@+id/exerciseBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Next Exercise"
-        android:layout_centerInParent="true"/>
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:layout_marginLeft="300dp"
+        android:text="Next 👉 " />
 
 
 
