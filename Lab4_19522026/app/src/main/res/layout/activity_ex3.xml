@@ -184,16 +184,7 @@
         android:textStyle="bold"
         android:text="Save"/>
 
-    <Button
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/saveButton"
-        android:id="@+id/exerciseBtn"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/green"
-        android:textStyle="bold"
-        android:layout_marginLeft="300dp"
-        android:text="Next 👉 " />
+
 
 
 
